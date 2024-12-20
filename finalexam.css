@@ -1,0 +1,62 @@
+
+
+
+
+.hero{
+    background-image: url('nyc.jfif');
+    background-size: 100% 100%;
+    position: relative;
+
+    background-color: aquamarine;
+    height:600px;
+}
+
+.hero>.box1{
+    background-color: rgba(132, 57, 68, 0.5);
+    height: 125px;
+    position: absolute;
+ 
+    top: 50px;
+    bottom:12px;
+    right:250px;
+    width:30%;}
+
+
+.ball-img{
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    border: solid red;
+    box-shadow: 10px 10px 20px 5px yellow ;
+}
+
+.animation{
+    border: solid 3px green;
+}
+
+.move1{
+  animation: move1 3s;
+}
+
+.move2{
+    animation: move2 3s;
+
+}
+
+.move3{
+    animation: move3 3s;
+
+}
+
+@keyframes move1 {
+    0% { left: 0; top: 0; }
+    100% { left: 100%; top: 100%; }
+}
+@keyframes move2 {
+    0% { left: 100%; top: 0; }
+    100% { left: 0; top: 100%; }
+}
+@keyframes move3 {
+    0% { left: 0; top: 100%; }
+    100% { left: 100%; top: 0; }
+}
